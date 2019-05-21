@@ -16,7 +16,13 @@
     </header>
 
     <div class="container">
-      <form name="contact" action="" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        action=""
+        method="POST"
+        data-netlify="true"
+        data-netlify-recaptcha="true"
+      >
         <div>
           <label>
             Name:
@@ -29,6 +35,7 @@
             <textarea name="message"></textarea>
           </label>
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <button type="submit">Send Message</button>
       </form>
     </div>
